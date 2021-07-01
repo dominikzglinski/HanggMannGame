@@ -10,7 +10,18 @@ namespace HanggMannGame
         {
             Console.WriteLine("Program Start\n");
 
-            string path = @"C:\Users\zglina\Desktop\DominikRzeczy\Motorolla Challange\countries_and_capitals.txt"; //path to file
+            Console.WriteLine("Write file path to countries_and_capitals.txt \nFor Example: 'C:\\Users\\zglina\\Desktop\\DominikRzeczy\\Motorolla Challange\\countries_and_capitals.txt' ");
+            
+            
+            string path = Console.ReadLine();
+
+            //string fileName = "countries_and_capitals.txt";
+            //string path = Path.Combine(Environment.CurrentDirectory, @"Data\", fileName);
+
+            //Console.WriteLine(path);
+
+            //string path = @"C:\Users\zglina\Desktop\DominikRzeczy\Motorolla Challange\countries_and_capitals.txt"; //path to file
+           
             Random rNumber = new Random();
             int index = rNumber.Next(183); //generating and assigning random number, so we can later use it to chose randome country - capital / line
             string capital;
@@ -216,7 +227,8 @@ namespace HanggMannGame
 
 
 
-
+            // Saving Score to file 
+            /*
             Console.WriteLine("Do you want to save your score? Write 'Yes' if yes or anything else if not");
             string saveScore = Console.ReadLine();
             saveScore = saveScore.ToUpper();
@@ -228,7 +240,8 @@ namespace HanggMannGame
                 string city = Console.ReadLine();
 
             }    
-
+                //unfinished :(
+                */
 
 
 
